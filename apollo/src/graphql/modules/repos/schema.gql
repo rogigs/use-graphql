@@ -1,0 +1,12 @@
+type Repo {
+  id: Int
+  name: String
+  description: String
+  private: Boolean
+  htmlUrl: String
+}
+
+type Query {
+  repos(login: String): [Repo]
+  repo(id: Int): Repo
+}
